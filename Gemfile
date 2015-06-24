@@ -20,6 +20,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do 
+  gem 'rails_12factor'
+  gem 'thin'
+end
+
 
 gem 'solidus', github: 'solidusio/solidus'
 gem 'solidus_auth_devise', '~> 1.1.0'

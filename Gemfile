@@ -21,7 +21,7 @@ end
 
 
 gem 'solidus', github: 'solidusio/solidus'
-gem 'solidus_auth_devise'
+gem 'solidus_auth_devise', '~> 1.1.0'
 
 gem 'haml-rails', '~> 0.9'
 

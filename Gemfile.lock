@@ -335,7 +335,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   solidus!
-  solidus_auth_devise
+  solidus_auth_devise (~> 1.1.0)
   spring
   sqlite3
   turbolinks

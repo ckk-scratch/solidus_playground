@@ -9,8 +9,17 @@
  *= require_tree .
 */
 
+body {
+	background-color: #000;
+}
+
+#wrapper {
+	background-color: #fff;
+}
+
 
 .scratch-container {
 	max-width: 1600px !important;
 	margin: 0 auto !important;
 }
+

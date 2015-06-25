@@ -8,3 +8,9 @@
  *= require_self
  *= require_tree .
 */
+
+
+.scratch-container {
+	max-width: 1600px !important;
+	margin: 0 auto !important;
+}

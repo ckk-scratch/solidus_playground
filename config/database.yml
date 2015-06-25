@@ -17,7 +17,7 @@ development:
 production:
   adapter: postgresql
   encoding: unicode
-  database: solid_spree_production
+database: solid_spree_production
   pool: 5
   username: 
   password:

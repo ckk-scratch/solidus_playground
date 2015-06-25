@@ -12,7 +12,7 @@ Spree.config do |config|
   config.currency = "USD"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "support@scratch.com"
 
   # Uncomment to stop tracking inventory levels in the application
   config.track_inventory_levels = false

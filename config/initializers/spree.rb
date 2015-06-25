@@ -17,6 +17,8 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   config.track_inventory_levels = false
 
+  config.address_requires_state = false
+
   # When true, product caches are only invalidated when they come in or out of
   # stock. Default is to invalidate cache on any inventory changes.
   # config.binary_inventory_cache = true

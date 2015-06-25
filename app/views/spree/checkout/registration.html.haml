@@ -1,0 +1,16 @@
+= render :partial => 'spree/shared/error_messages', :locals => { :target => @user }
+%h1= Spree.t(:registration)
+#registration{"data-hook" => ""}
+  #account.columns.alpha.eight
+    = render template: 'spree/user_sessions/new'
+  - if Spree::Config[:allow_guest_checkout]
+    #guest_checkout.columns.omega.eight{"data-hook" => ""}
+      %h6= Spree.t(:guest_user_account)
+      - if flash[:registration_error]
+        .flash.error= flash[:registration_error]
+      = form_for @order, :url => update_checkout_registration_path, :method => :put, :html => { :id => 'checkout_form_registration' } do |f|
+        %p
+          = f.label :email, Spree.t(:email)
+          %br/
+          = f.email_field :email, :class => 'title'
+        %p= f.submit Spree.t(:continue), :class => 'button primary'

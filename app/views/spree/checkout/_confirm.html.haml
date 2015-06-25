@@ -1,0 +1,9 @@
+%fieldset#order_details{"data-hook" => ""}
+  .clear
+  %legend{:align => "center"}= Spree.t(:confirm)
+  = render :partial => 'spree/shared/order_details', :locals => { :order => @order }
+%br/
+.form-buttons{"data-hook" => "buttons"}
+  = submit_tag Spree.t(:place_order), :class => 'continue button primary'
+  :javascript
+    Spree.disableSaveOnClick();

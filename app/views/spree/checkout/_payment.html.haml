@@ -1,6 +1,10 @@
 %fieldset#payment{"data-hook" => ""}
   %legend{:align => "center"}= Spree.t(:payment_information)
   %div{"data-hook" => "checkout_payment_step"}
+
+    %h3 cc# 4111111111111111
+    %h3 ccv# 1
+    
     - if @payment_sources.present?
       .card_options
         = radio_button_tag 'use_existing_card', 'yes', true
